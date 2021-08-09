@@ -1,0 +1,24 @@
+main {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+main div {
+  margin-top: 1em;
+}
+
+main input {
+  text-align: center;
+}
+
+main .situacao {
+  border: 1px solid #ccc;
+  padding: .2em;
+  background-color: #FF0000;
+}
+
+main .situacao .aprovado {
+  background-color: #00FF00;
+}
+/*# sourceMappingURL=style.css.map */
