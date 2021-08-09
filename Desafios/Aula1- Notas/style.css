@@ -18,7 +18,7 @@ main .situacao {
   background-color: #FF0000;
 }
 
-main .situacao .aprovado {
+main .situacao.aprovado {
   background-color: #00FF00;
 }
 /*# sourceMappingURL=style.css.map */

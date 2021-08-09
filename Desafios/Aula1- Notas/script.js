@@ -28,6 +28,17 @@ const calcMedia = () =>
         return sum + nota;
     }) / arrNotasFromHtml.length;
 const estaAprovado = media => media >= 7;
+
+const styleSituacao = (media) => {
+    if (estaAprovado(media)) {
+        divSituacao.classList.add("aprovado")
+        divSituacao.innerHTML = "Aprovado"
+    }
+    else{
+         divSituacao.classList.remove("aprovado")
+         divSituacao.innerHTML = "Reprovado"
+        }
+}
 divNotas.forEach(
     (element, index) => element.addEventListener("input", (event) => {
         let text = event.target.value;
@@ -35,8 +46,6 @@ divNotas.forEach(
         arrNotasFromHtml[index] = Number(text);
         let media = calcMedia();
         divMedia.value = media;
-        estaAprovado(media) ? divSituacao.classList.add("aprovado") : divSituacao.classList.remove("aprovado");
+        styleSituacao(media);
     })
 );
-
-
