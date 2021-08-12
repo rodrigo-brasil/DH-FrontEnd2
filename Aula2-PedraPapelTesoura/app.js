@@ -8,7 +8,7 @@ const obterEscolhaAleatoria = () => {
     let valorAleatorio = Math.random(); // retorna um numero entre 0 e 1
     return valorAleatorio < 0.3 ? "pedra" : valorAleatorio < 0.6 ? "papel" : "tesoura"; //dividindo 1 em 3 partes para definar as opções;
 }
-// Loop do jogo
+// Loop do jogo quem fizer 3 pontos primeiro ganha
 while (pontosJogador < 3 && pontosComputador < 3) {
     let valorEscolhido; //escolha do jogador
 
