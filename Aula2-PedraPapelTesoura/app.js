@@ -1,5 +1,5 @@
-const pontosJogador = 0;
-const pontosComputador = 0;
+let pontosJogador = 0;
+let pontosComputador = 0;
 const arr = [["pedra", "tesoura"], ["tesoura", "papel"], ["papel", "pedra"]]; // array de comparação
 const jogadorGanhouPartida = (arrayEscolhasJogadorPc) => arr.some(item => item.toString() == arrayEscolhasJogadorPc.toString())
 const validarEscolhaJogador = (escolhaDigitada) => ["pedra", "papel", "tesoura"].some(item => item == escolhaDigitada.toLowerCase())
@@ -32,7 +32,7 @@ while (pontosJogador < 3 && pontosComputador < 3) {
     //se perdeu
     else {
         pontosComputador++;
-        alert("pontosComputador Ganhou! total de pontos:" + pontosComputador)
+        alert("Computador Ganhou! total de pontos:" + pontosComputador)
     }
 }
 pontosJogador >= 3 ? alert("Você ganhou!") : alert(" Você perdeu!")
