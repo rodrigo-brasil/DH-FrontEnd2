@@ -13,7 +13,7 @@ while (pontosJogador < 3 && pontosComputador < 3) {
     let valorEscolhido; //escolha do jogador
 
     do {
-        valorEscolhido = prompt("Pedra, Papel ou Tesoura!");
+        valorEscolhido = prompt("Pedra, Papel ou Tesoura?");
     } while (!validarEscolhaJogador(valorEscolhido));
 
     let valorPC = obterEscolhaAleatoria()
