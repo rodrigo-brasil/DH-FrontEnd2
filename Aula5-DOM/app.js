@@ -9,5 +9,7 @@ function mudarTema(){
     if(currentTema >= temas.length) currentTema = 0 
     document.querySelector('#body').classList.remove(current);
     document.querySelector('#body').classList.add(temas[currentTema]);
+    btnTema.classList.remove("slide"+ current)
+    btnTema.classList.add("slide"+temas[currentTema]);
 }
 
