@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+:root{
+  --body-bg : #dbdbdb;
+  --h1-color: rgb(156, 156, 156);
+  --li-bg: white;
+  --li-color: rgb(71, 71, 71);
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  background-color: var(--body-bg);
+}
+
+h1 {
+  text-align: center;
+  margin: 2em 0;
+  color: var(--h1-color);
+  font-size: 3em;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+li {
+  padding: .5em 2em;
+  margin-bottom: 1em;
+  background-color: var(--li-bg);
+  border-radius: 5px;
+  color: var(--li-color);
+  font-size: 1.1em;
+}
+
+.escuro{
+  --body-bg : hsl(0, 0%, 16%);
+  --h1-color: hsl(0, 0%, 91%);
+  --li-bg: hsl(0, 0%, 40%);
+  --li-color: hsl(0, 0%, 88%);
+}
+
+.pink{
+  --body-bg : hsl(350, 100%, 92%);
+  --h1-color: black;
+  --li-bg: hsl(0, 0%, 40%);
+  --li-color: hsl(0, 75%, 70%);
+}
+
+.normal{
+  --body-bg : #dbdbdb;
+  --h1-color: rgb(156, 156, 156);
+  --li-bg: white;
+  --li-color: rgb(71, 71, 71);
+}
+
+.slide{
+  border-radius: 20px;
+  outline: none;
+  border :0;
+  padding: .6em 1.2em;
+  background-color: blueviolet;
+  position: relative;
+
+  margin: 1rem;
+}
+
+.slide::after{
+  content: '';
+  width: .9em;
+  height: .9em;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left:0;
+  transform: translate(15%, -50%);
+  z-index: 100;
+}
